@@ -1,0 +1,21 @@
+{
+  "kind": "collectionType",
+  "collectionName": "heroes",
+  "info": {
+    "singularName": "hero",
+    "pluralName": "heroes",
+    "displayName": "Hero"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "HeroText": {
+      "type": "string"
+    },
+    "Subheading": {
+      "type": "text"
+    }
+  }
+}
