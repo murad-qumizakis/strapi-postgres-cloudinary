@@ -1,9 +1,9 @@
 'use strict';
 
 /**
- * algo router.
+ * gallery router.
  */
 
 const { createCoreRouter } = require('@strapi/strapi').factories;
 
-module.exports = createCoreRouter('api::algo.algo');
+module.exports = createCoreRouter('api::gallery.gallery');

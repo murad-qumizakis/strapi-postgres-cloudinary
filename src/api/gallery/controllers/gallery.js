@@ -1,9 +1,9 @@
 'use strict';
 
 /**
- *  algo controller
+ *  gallery controller
  */
 
 const { createCoreController } = require('@strapi/strapi').factories;
 
-module.exports = createCoreController('api::algo.algo');
+module.exports = createCoreController('api::gallery.gallery');

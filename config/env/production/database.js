@@ -7,6 +7,10 @@ module.exports = ({ env }) => {
   const database = env("DATABASE_NAME", "railway");
   const user = env("DATABASE_USERNAME", "postgres");
   const password = env("DATABASE_PASSWORD", "34E6CB6E1d4fgf15A6D1a15eFBgAec54");
+  const url = env(
+    "DATABASE_URL",
+    "postgresql://postgres:Ea224CaGe-b-de*2DBBF4g6eGC16bgCe@roundhouse.proxy.rlwy.net:14540/railway"
+  );
 
   return {
     connection: {

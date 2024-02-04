@@ -1,0 +1,30 @@
+{
+  "kind": "collectionType",
+  "collectionName": "social_medias",
+  "info": {
+    "singularName": "social-media",
+    "pluralName": "social-medias",
+    "displayName": "Social Media"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "instagram": {
+      "type": "text"
+    },
+    "youtube": {
+      "type": "text"
+    },
+    "twitter": {
+      "type": "text"
+    },
+    "facebook": {
+      "type": "text"
+    },
+    "linkedIn": {
+      "type": "text"
+    }
+  }
+}
