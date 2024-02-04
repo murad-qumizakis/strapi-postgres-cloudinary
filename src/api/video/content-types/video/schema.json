@@ -36,6 +36,12 @@
       "type": "text",
       "required": true,
       "unique": false
+    },
+    "sub_category": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::sub-category.sub-category",
+      "inversedBy": "videos"
     }
   }
 }

@@ -7,10 +7,6 @@ module.exports = ({ env }) => {
   const database = env("DATABASE_NAME", "railway");
   const user = env("DATABASE_USERNAME", "postgres");
   const password = env("DATABASE_PASSWORD", "34E6CB6E1d4fgf15A6D1a15eFBgAec54");
-  const url = env(
-    "DATABASE_URL",
-    "postgresql://postgres:Ea224CaGe-b-de*2DBBF4g6eGC16bgCe@roundhouse.proxy.rlwy.net:14540/railway"
-  );
 
   return {
     connection: {
@@ -22,15 +18,15 @@ module.exports = ({ env }) => {
         user,
         password,
       },
-      acquireConnectionTimeout: 1000000,
+      acquireConnectionTimeout: 3000000,
       pool: {
         min: 0,
         max: 25,
-        acquireTimeoutMillis: 300000,
-        createTimeoutMillis: 300000,
-        destroyTimeoutMillis: 300000,
-        idleTimeoutMillis: 30000,
-        reapIntervalMillis: 1000,
+        acquireTimeoutMillis: 500000,
+        createTimeoutMillis: 500000,
+        destroyTimeoutMillis: 500000,
+        idleTimeoutMillis: 50000,
+        reapIntervalMillis: 5000,
         createRetryIntervalMillis: 2000,
       },
       debug: false,
