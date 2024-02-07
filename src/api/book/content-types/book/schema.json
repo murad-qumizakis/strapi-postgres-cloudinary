@@ -4,7 +4,8 @@
   "info": {
     "singularName": "book",
     "pluralName": "books",
-    "displayName": "Book"
+    "displayName": "Book",
+    "description": ""
   },
   "options": {
     "draftAndPublish": true
@@ -20,16 +21,21 @@
       "required": true
     },
     "bookCover": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
       "allowedTypes": [
         "images"
-      ],
-      "type": "media",
-      "multiple": false
+      ]
     },
     "link": {
       "type": "text",
       "required": true,
       "unique": true
+    },
+    "slug": {
+      "type": "uid",
+      "targetField": "title"
     }
   }
 }

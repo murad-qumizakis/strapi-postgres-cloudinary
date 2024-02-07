@@ -1,10 +1,10 @@
 {
   "kind": "collectionType",
-  "collectionName": "classes",
+  "collectionName": "readings",
   "info": {
-    "singularName": "class",
-    "pluralName": "classes",
-    "displayName": "Class",
+    "singularName": "reading",
+    "pluralName": "readings",
+    "displayName": "Reading",
     "description": ""
   },
   "options": {
@@ -17,32 +17,26 @@
       "required": true
     },
     "description": {
-      "type": "text",
+      "type": "richtext",
       "required": true
     },
-    "price": {
-      "type": "string",
-      "required": true
+    "slug": {
+      "type": "uid",
+      "targetField": "name"
     },
-    "instructor": {
-      "type": "string",
-      "required": true
+    "link": {
+      "type": "text"
     },
-    "featuredImage": {
+    "thumbnail": {
       "type": "media",
       "multiple": false,
-      "required": true,
+      "required": false,
       "allowedTypes": [
         "images"
       ]
     },
-    "slug": {
-      "type": "uid",
-      "targetField": "name",
-      "required": true
-    },
-    "link": {
-      "type": "text"
+    "instructor": {
+      "type": "string"
     },
     "duration": {
       "type": "string"

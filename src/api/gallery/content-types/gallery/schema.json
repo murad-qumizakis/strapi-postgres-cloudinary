@@ -4,7 +4,8 @@
   "info": {
     "singularName": "gallery",
     "pluralName": "galleries",
-    "displayName": "Gallery"
+    "displayName": "Gallery",
+    "description": ""
   },
   "options": {
     "draftAndPublish": true
@@ -12,18 +13,18 @@
   "pluginOptions": {},
   "attributes": {
     "art": {
+      "type": "media",
+      "multiple": true,
+      "required": false,
       "allowedTypes": [
         "images"
-      ],
-      "type": "media",
-      "multiple": true
+      ]
     },
-    "images": {
-      "allowedTypes": [
-        "images"
-      ],
-      "type": "media",
-      "multiple": false
+    "name": {
+      "type": "string"
+    },
+    "etsyLink": {
+      "type": "text"
     }
   }
 }
