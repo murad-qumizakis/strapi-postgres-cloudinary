@@ -25,6 +25,9 @@
     },
     "etsyLink": {
       "type": "text"
+    },
+    "description": {
+      "type": "richtext"
     }
   }
 }

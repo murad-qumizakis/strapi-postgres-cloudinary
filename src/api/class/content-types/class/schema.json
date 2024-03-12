@@ -16,10 +16,6 @@
       "type": "string",
       "required": true
     },
-    "description": {
-      "type": "text",
-      "required": true
-    },
     "price": {
       "type": "string",
       "required": true
@@ -46,6 +42,9 @@
     },
     "duration": {
       "type": "string"
+    },
+    "description": {
+      "type": "richtext"
     }
   }
 }
